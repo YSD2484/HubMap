@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --color-quant-bg: #0a0a0a;
+  --color-quant-fg: #ededed;
+  --color-quant-accent: #00ffcc;
+  --color-quant-blue: #0088ff;
+  --color-quant-red: #ff3366;
+  --color-quant-surface: #161616;
+  --color-quant-surface-hover: #232323;
+  --color-quant-border: #2a2a2a;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--color-quant-bg);
+  color: var(--color-quant-fg);
+  font-family: var(--font-sans);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Custom Scrollbar for Quant Dashboard */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-quant-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-quant-border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-quant-surface-hover);
+}
+
+/* Base styles for Recharts dark mode */
+.recharts-text {
+  fill: #888888 !important;
+}
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  stroke: #333333 !important;
+}
+.recharts-tooltip-wrapper {
+  background-color: var(--color-quant-surface) !important;
+  border: 1px solid var(--color-quant-border) !important;
+  border-radius: 8px !important;
+}
+
+@keyframes gradient-slow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient-slow {
+  animation: gradient-slow 15s ease infinite;
+}

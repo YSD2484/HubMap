@@ -1,0 +1,20 @@
+pgdata/
+.env
+__pycache__/
+.pytest_cache/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+.DS_Store
+*.feather
+data/*.csv
+data/*.db
+zihni-255523-3e68f4df273e.json
+
+# Exclude logs and paper documents
+logs/
+paper/

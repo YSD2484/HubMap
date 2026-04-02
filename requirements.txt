@@ -1,0 +1,28 @@
+# Core
+SQLAlchemy>=2.0.30
+pydantic-settings
+psycopg2-binary>=2.9.9
+python-dateutil>=2.9.0.post0
+
+# Data / ML
+pandas
+numpy
+networkx
+xgboost
+gensim
+scikit-learn
+scipy
+optuna
+matplotlib
+seaborn
+
+# String matching
+rapidfuzz>=3.14.3
+
+# LLM clients
+openai
+anthropic
+google-genai
+
+# HTTP
+requests
